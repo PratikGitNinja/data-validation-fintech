@@ -17,7 +17,7 @@ def test_null_check_target(target_data):
     assert target_data['transaction_amount'].isnull().sum() == 0, "There is null in the transaction amount."
 
 # 4. Validate the invalid email count : 
-@pytest.mark.skipif(reason="This is expected to fail as we have one inavlid value in target.")
+@pytest.mark.skipif(reason="This is expected to fail as we have one inavlid value in target system.")
 def test_validate_email(target_data):
     patterns = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
     invalid = ~target_data['email'].str.match(patterns)
