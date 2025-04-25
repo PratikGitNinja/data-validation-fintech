@@ -1,0 +1,7 @@
+transaction_id,customer_id,customer_name,email,transaction_amount,transaction_date,status
+TXN001,101,John Doe,john.doe@example.com,100.50,2024-04-01,Success
+TXN002,102,Jane Smith,jane.smith@example.com,300.00,2024-04-02,Failed
+TXN003,103,,noemail@,150.00,2024-04-03,Success
+TXN004,104,Sam Roy,sam.roy@example.com,0,2024-04-05,Success
+TXN005,101,John Doe,john.doe@example.com,500.00,2024-04-07,Success
+TXN001,101,John Doe,john.doe@example.com,100.50,2024-04-01,Success  # duplicate
